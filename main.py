@@ -5,8 +5,8 @@ This module contains tests for even-color codes
 Insted of having differnet logics for converting from and back to number and color pair, 
 a dictionary called COLOR_PAIRS has been created for ease of retrieval and conversion
 """
-from utilities import (
-    generate_reference_manual,
+from color_code_manual import generate_reference_manual
+from color_code_converter import (
     get_color_from_pair_number,
     get_pair_number_from_color,
 )

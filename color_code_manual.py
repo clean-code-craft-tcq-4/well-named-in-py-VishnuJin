@@ -1,18 +1,8 @@
 """
-This module contains utility functions related to color codes
+this module contains functionalities related to color code reference manual
 """
 from even_color_codes import COLOR_PAIRS
-from helper_functions import print_as_table
-
-
-def get_color_from_pair_number(wire_pair_number):
-    return COLOR_PAIRS[wire_pair_number]
-
-
-def get_pair_number_from_color(major_color, minor_color):
-    for pair_number, color_pair in COLOR_PAIRS.items():
-        if (major_color, minor_color) == color_pair:
-            return pair_number
+from format_output import print_as_table
 
 
 def generate_reference_manual():
